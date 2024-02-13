@@ -1,0 +1,141 @@
+
+body {
+  font-family: BANGERS, sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  margin: 0;
+  background-color: #0e0e0e;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding: 20px;
+}
+
+.sidebar {
+  width: 25%;
+  padding-right: 20px;
+  padding-left: 20px;
+  padding-top: 30px;
+  padding-bottom: 10px;
+  position: relative;
+  right: 90px;
+  top: 20px;
+  border-radius: 50px;
+  background-color: #060606;
+}
+
+.main-content {
+  width: 60%;
+  height: 100px;
+  position: relative;
+  left: 50px;
+}
+
+.sidebar h2 {
+  color: #ffffff;
+  background-color: #6d6d6d6c;
+  font-size: 24px;
+  margin-bottom: 20px;
+  border-radius: 100px;
+  padding: 10px;
+}
+
+.avatar {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  margin-bottom: 20px;
+}
+
+.header {
+  margin-bottom: 20px;
+}
+
+.tile {
+  background-color: #7c7c7e;
+  color: #000000;
+  border-radius: 70px;
+  padding: 20px;
+  margin: 10px;
+  width: 700px;
+  height: 600px;
+  position: relative;
+  left: 68px;
+  bottom: 250px;
+  text-align: center;
+  transition: transform 0.3s ease-in-out;
+  font-family: 'Protest Riot', sans-serif;
+  box-shadow: 4px 4px 8px #60606097;
+}
+
+.tile:hover {
+  transform: scale(1.02);
+}
+
+.avatar {
+  transition: transform 0.2s ease-in-out;
+}
+
+.avatar:hover {
+  transform: scale(1.10);
+  transition: transform 100ms ease-in-out;
+}
+
+.tile h2 {
+  font-size: 38px;
+}
+
+.tile p {
+  font-size: 25px;
+}
+
+.tile ppy {
+  font-size: 25px;
+  color: #FFD43B;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Horizontal shadow, vertical shadow, blur radius, shadow color */
+}
+.tile pidk {
+  font-size: 25;
+}
+
+.tile pjar {
+  font-size: 25px;
+  color:  #0085CA;
+}
+.tile phtml {
+  color: #E34C26;
+  font-size: 25px;
+}
+.tile pcss {
+  color: #66D3FA;
+  font-size: 25px;
+}
+.tile pjarscript {
+  color: #F0DB4F;
+  font-size: 25px;
+}
+.tile pkotlin {
+  color: #08A3D7;
+  font-size: 25px;
+}
+.tile pc {
+  color: #3a008c;
+  font-size: 25px;
+}
+
+.dev {
+  width: 10%; /* Breite des Elements */
+  height: 40%; /* Höhe des Elements */
+  position: relative;
+  left: 60px;
+  bottom: 40px;
+  background-color: #060606;
+}
+
