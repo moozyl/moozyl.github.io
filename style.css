@@ -29,6 +29,7 @@ body {
   top: 20px;
   border-radius: 50px;
   background-color: #060606;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
 .main-content {
@@ -36,22 +37,48 @@ body {
   height: 100px;
   position: relative;
   left: 50px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
 .sidebar h2 {
-  color: #ffffff;
+  color: #E4E4E4;
   background-color: #6d6d6d6c;
-  font-size: 24px;
+  font-size: 30px;
   margin-bottom: 20px;
   border-radius: 100px;
   padding: 10px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.sidebar haboutme {
+  position: relative;
+  top: 20px;
+  left: 10px;
+  font-family: Protest Riot, sans-serif;
+  font-style: normal;
+  color: #E4E4E4;
+  font-size: 23px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.sidebar h3 {
+  font-family: Bitter, sans-serif;
+  font-style: italic;
+  color: #E4E4E4;
+  background-color: #6d6d6d39;
+  font-size: 22px;
+  margin-bottom: 20px;
+  border-radius: 100px;
+  padding: 10px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
 .avatar {
-  width: 150px;
-  height: 150px;
+  width: 200px;
+  height: 200px;
   border-radius: 50%;
   margin-bottom: 20px;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
 .header {
@@ -60,7 +87,7 @@ body {
 
 .tile {
   background-color: #7c7c7e;
-  color: #000000;
+  color: #E4E4E4;
   border-radius: 70px;
   padding: 20px;
   margin: 10px;
@@ -72,70 +99,88 @@ body {
   text-align: center;
   transition: transform 0.3s ease-in-out;
   font-family: 'Protest Riot', sans-serif;
-  box-shadow: 4px 4px 8px #60606097;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
 .tile:hover {
   transform: scale(1.02);
-}
-
-.avatar {
-  transition: transform 0.2s ease-in-out;
-}
-
-.avatar:hover {
-  transform: scale(1.10);
   transition: transform 100ms ease-in-out;
 }
 
+.avatar {
+  position: relative;
+  top: 35px;
+  bottom: 100px;  width: 120px;
+  height: 120px;
+}
+
+.avatar:hover {
+  transform: scale(1.09);
+  transition: transform 200ms ease-in-out;
+}
+
 .tile h2 {
-  font-size: 38px;
+  font-size: 40px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
 .tile p {
-  font-size: 25px;
+  font-size: 33px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
 .tile ppy {
-  font-size: 25px;
+  font-size: 27px;
+  font-style: italic;
   color: #FFD43B;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Horizontal shadow, vertical shadow, blur radius, shadow color */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 .tile pidk {
-  font-size: 25;
+  font-size: 27px;
+  font-style: italic;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
 .tile pjar {
-  font-size: 25px;
+  font-size: 27px;
+  font-style: italic;
   color:  #0085CA;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 .tile phtml {
   color: #E34C26;
-  font-size: 25px;
+  font-size: 27px;
+  font-style: italic;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 .tile pcss {
   color: #66D3FA;
-  font-size: 25px;
+  font-size: 27px;
+  font-style: italic;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 .tile pjarscript {
   color: #F0DB4F;
-  font-size: 25px;
+  font-size: 27px;
+  font-style: italic;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 .tile pkotlin {
   color: #08A3D7;
-  font-size: 25px;
+  font-size: 27px;
+  font-style: italic;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 .tile pc {
   color: #3a008c;
-  font-size: 25px;
+  font-size: 27px;
+  font-style: italic;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
 .dev {
-  width: 10%; /* Breite des Elements */
-  height: 40%; /* Höhe des Elements */
+  width: 10%;
+  height: 10%;
   position: relative;
-  left: 60px;
-  bottom: 40px;
-  background-color: #060606;
+  left: 40px;
 }
-
