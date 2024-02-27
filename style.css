@@ -1,186 +1,119 @@
-
 body {
-  font-family: BANGERS, sans-serif;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 100vh;
+  font-family: 'JetBrains-Mono', sans-serif;
   margin: 0;
-  background-color: #0e0e0e;
+  padding: 0;
+  background-color: #111;
+  overflow: hidden;
 }
 
 .container {
   display: flex;
-  flex-direction: row;
-  align-items: center;
   justify-content: center;
-  width: 100%;
-  padding: 20px;
+  align-items: center;
+  height: 100vh;
 }
 
 .sidebar {
   width: 25%;
-  padding-right: 20px;
-  padding-left: 20px;
-  padding-top: 30px;
-  padding-bottom: 10px;
-  position: relative;
-  right: 90px;
-  top: 20px;
-  border-radius: 50px;
-  background-color: #060606;
-  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  padding: 20px;
+  border-radius: 10px;
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+.sidebar .avatar {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  margin: 0 auto 20px;
+  display: block;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.sidebar h2 {
+  font-size: 24px;
+  margin: 0;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+.sidebar h3 {
+  font-size: 18px;
+  font-style: italic;
+  margin-bottom: 20px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.sidebar p.aboutme {
+  font-size: 16px;
+  color: #ccc;
+  cursor: pointer;
+  transition: color 0.3s ease, font-size 0.3s ease, transform 0.3s ease;
+}
+
+.sidebar p.aboutme:hover {
+  color: #fff;
+  font-size: 17px;
+  transform: scale(1.1);
 }
 
 .main-content {
   width: 60%;
-  height: 100px;
-  position: relative;
-  left: 50px;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-}
-
-.sidebar h2 {
-  color: #E4E4E4;
-  background-color: #6d6d6d6c;
-  font-size: 30px;
-  margin-bottom: 20px;
-  border-radius: 100px;
-  padding: 10px;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-}
-
-.sidebar haboutme {
-  position: relative;
-  top: 20px;
-  left: 10px;
-  font-family: Protest Riot, sans-serif;
-  font-style: normal;
-  color: #E4E4E4;
-  font-size: 23px;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-}
-
-.sidebar h3 {
-  font-family: Bitter, sans-serif;
-  font-style: italic;
-  color: #E4E4E4;
-  background-color: #6d6d6d39;
-  font-size: 22px;
-  margin-bottom: 20px;
-  border-radius: 100px;
-  padding: 10px;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-}
-
-.avatar {
-  width: 200px;
-  height: 200px;
-  border-radius: 50%;
-  margin-bottom: 20px;
-  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-}
-
-.header {
-  margin-bottom: 20px;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
 }
 
 .tile {
-  background-color: #7c7c7e;
-  color: #E4E4E4;
-  border-radius: 70px;
-  padding: 20px;
-  margin: 10px;
-  width: 700px;
-  height: 600px;
-  position: relative;
-  left: 68px;
-  bottom: 250px;
   text-align: center;
-  transition: transform 0.3s ease-in-out;
-  font-family: 'Protest Riot', sans-serif;
-  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-}
-
-.tile:hover {
-  transform: scale(1.02);
-  transition: transform 100ms ease-in-out;
-}
-
-.avatar {
-  position: relative;
-  top: 35px;
-  bottom: 100px;  width: 120px;
-  height: 120px;
-}
-
-.avatar:hover {
-  transform: scale(1.09);
-  transition: transform 200ms ease-in-out;
 }
 
 .tile h2 {
-  font-size: 40px;
+  font-size: 32px;
+  margin-bottom: 20px;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
 .tile p {
-  font-size: 33px;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  font-size: 18px;
+  line-height: 1.6;
 }
 
-.tile ppy {
-  font-size: 27px;
-  font-style: italic;
-  color: #FFD43B;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-}
-.tile pidk {
-  font-size: 27px;
-  font-style: italic;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+.tile ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 10px 0;
 }
 
-.tile pjar {
-  font-size: 27px;
-  font-style: italic;
-  color:  #0085CA;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-}
-.tile phtml {
-  color: #E34C26;
-  font-size: 27px;
-  font-style: italic;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-}
-.tile pcss {
-  color: #66D3FA;
-  font-size: 27px;
-  font-style: italic;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-}
-.tile pjarscript {
-  color: #F0DB4F;
-  font-size: 27px;
-  font-style: italic;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-}
-.tile pkotlin {
-  color: #08A3D7;
-  font-size: 27px;
-  font-style: italic;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-}
-.tile pc {
-  color: #3a008c;
-  font-size: 27px;
-  font-style: italic;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+.tile ul li {
+  display: inline;
 }
 
-.dev {
-  width: 10%;
-  height: 10%;
-  position: relative;
-  left: 40px;
+.tile ul li:not(:last-child)::after {
+  content: ",";
+  margin-right: 5px;
+}
+
+pmoozyl {
+  font-size: 20px;
+  font-style: italic;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+.lang {
+  color: #007bff;
+  font-size: 20px;
 }
